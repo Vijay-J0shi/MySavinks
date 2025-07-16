@@ -2,14 +2,14 @@
 
 :root {
   --ff: "Inter", sans-serif;
-  --color-primary: hsl(44, 50%, 90%); /* Light yellow */
-  --color-secondary: hsl(44, 50%, 10%); /* Dark yellow */
-  --color-tertiary: hsl(104, 80%, 20%); /* Green */
-  --color-accent: hsl(344, 80%, 20%); /* Red */
-  --fs-base: 1rem;       /* 16px */
-  --fs-sm: 0.875rem;     /* 14px */
-  --fs-lg: 1.125rem;     /* 18px */
-  --fs-xl: 1.25rem;      /* 20px */
+  --color-primary: hsl(44, 50%, 90%); 
+  --color-secondary: hsl(43, 61%, 16%); 
+  --color-tertiary: hsl(104, 80%, 20%); 
+  --color-accent: hsl(344, 61%, 34%); 
+  --fs-base: 1rem;      
+  --fs-sm: 0.875rem;     
+  --fs-lg: 1.125rem;     
+  --fs-xl: 1.25rem;      
   --lh: 1.4em;
 
   body {
@@ -20,10 +20,10 @@
 }
 
 .dark {
-  --color-primary: hsl(44, 50%, 10%); /* Dark yellow */
-  --color-secondary: hsl(44, 50%, 90%); /* Light yellow */
-  --color-tertiary: hsl(104, 80%, 80%); /* Light green */
-  --color-accent: hsl(344, 80%, 80%); /* Light red */
+  --color-primary: hsl(44, 50%, 10%); 
+  --color-secondary: hsl(44, 50%, 90%); 
+  --color-tertiary: hsl(104, 80%, 80%); 
+  --color-accent: hsl(344, 80%, 80%); 
   body {
     background-color: var(--color-primary);
     color: var(--color-secondary);

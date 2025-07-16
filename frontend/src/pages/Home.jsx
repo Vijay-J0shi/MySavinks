@@ -56,7 +56,7 @@ export const Home = () => {
     <div className="p-6 w-screen mx-auto ">
       <h1 className="text-2xl font-bold mb-4">Welcome, {userData.name}</h1>
 
-      <form onSubmit={handleAdd} className="flex gap-2 mb-6">
+      <form onSubmit={handleAdd} className=" flex gap-2 mb-6">
         <input
           type="url"
           placeholder="Enter a link to save"
@@ -67,14 +67,14 @@ export const Home = () => {
         />
         <button
           type="submit"
-          className="px-4 py-2 bg-blue-600 text-white rounded"
+          className="px-4 py-2 bg-[var(--color-accent)] text-[var(--color-primary)] text-[var(--fs-base)]  rounded"
           disabled={loading}
         >
           {loading ? "Saving..." : "Save"}
         </button>
       </form>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1  gap-4">
         {bookmarks.map((bm) => (
           <BookmarkCard key={bm._id} data={bm} onDelete={handleDelete} />
         ))}
