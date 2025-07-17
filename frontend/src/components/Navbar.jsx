@@ -23,7 +23,6 @@ export default function Navbar({ user }) {
   }
 };
 
-
   return (
     <nav
       className="  ticky top-0 flex justify-between items-center shadow-md pr-[2%]"
