@@ -2,14 +2,15 @@ import React, { useContext, useEffect, useState } from 'react'
 import { authDataContext } from '../Context/AuthContext'
 import { userDataContext } from '../Context/UserContext'
 import { addBookmark, deleteBookmark, getBookmarks } from '../utils/bookmarkApi'
-import BookmarkCard from '../components/BookmarkCard'
 import { toast } from 'react-toastify'
+import BookmarkCard from '../components/BOokmarkCard'
 
 export const Home = () => {
   const { serverUrl, loading, setLoading } = useContext(authDataContext)
   const { userData } = useContext(userDataContext)
   const [url, setUrl] = useState("")
   const [bookmarks, setBookmarks] = useState([])
+  
 
   useEffect(() => {
     const load = async () => {
