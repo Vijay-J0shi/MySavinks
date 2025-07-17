@@ -1,5 +1,8 @@
 # Savinks: Link Saver + Auto-Summary
 
+**Website Link** -  https://savinks.onrender.com/
+**Backend Link** - https://mysavinks.onrender.com/
+
 Savinks is a full-stack bookmarking application built for a take-home internship assignment. It allows users to sign up, log in, save bookmarks with auto-generated summaries using the Jina AI API, and manage their bookmarks in a responsive interface. The app demonstrates clean code, modular design, and thoughtful UI/UX, meeting all must-have user stories from the assignment.
 
 ## Project Overview
