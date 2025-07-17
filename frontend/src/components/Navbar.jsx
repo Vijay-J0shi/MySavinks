@@ -10,18 +10,19 @@ export default function Navbar({ user }) {
   const { serverUrl } = useContext(authDataContext);
 
   const handleLogout = async () => {
-    try {
-      await axios.post(
-        `${serverUrl}/api/auth/logout`,
-        {},
-        { withCredentials: true }
-      );
-      navigate('/');
-      toast.success('Logout Successfully');
-    } catch (error) {
-      console.error('Logout failed:', error);
-    }
-  };
+  try {
+    await axios.post(
+      `${serverUrl}/api/auth/logout`,
+      {},
+      { withCredentials: true }
+    );
+    toast.success('Logout Successfully');
+    window.location.href = '/';
+  } catch (error) {
+    console.error('Logout failed:', error);
+  }
+};
+
 
   return (
     <nav
